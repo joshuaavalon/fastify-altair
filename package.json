@@ -1,0 +1,49 @@
+{
+  "name": "@joshuaavalon/fastify-altair",
+  "version": "1.0.0",
+  "description": "Altair plugin for Fastify.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint --ext .ts src",
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "release": "standard-version",
+    "test": "jest --ci --coverage"
+  },
+  "keywords": [
+    "altair",
+    "fastify",
+    "graphql"
+  ],
+  "homepage": "https://github.com/joshuaavalon/fastify-altair#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuaavalon/fastify-altair.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshuaavalon/fastify-altair/issues"
+  },
+  "files": [
+    "lib",
+    "!lib/**/__test__"
+  ],
+  "author": "Joshua Avalon",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "altair-static": "^4.1.0",
+    "fastify-plugin": "^3.0.0",
+    "fastify-static": "^4.5.0"
+  },
+  "devDependencies": {
+    "@joshuaavalon/eslint-config-typescript": "^5.0.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.6",
+    "eslint": "^8.2.0",
+    "fastify": "^3.25.3",
+    "jest": "^27.4.7",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.4.4"
+  }
+}
