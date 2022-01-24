@@ -1,4 +1,4 @@
-import type {  RenderOptions } from "altair-static";
+import type { RenderOptions } from "altair-static";
 
 export interface PluginOption extends RenderOptions {
   /**
